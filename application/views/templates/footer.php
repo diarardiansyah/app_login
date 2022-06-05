@@ -2,7 +2,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; App Login <?= date('Y'); ?></span>
+                        <span>Copyright &copy; App Zakat <?= date('Y'); ?></span>
                     </div>
                 </div>
             </footer>
@@ -73,6 +73,13 @@
             });
         });
     </script>
+
+    <!-- Page level plugins -->
+    <script src="<?= base_url('assets/'); ?>vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url('assets/'); ?>vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="<?= base_url('assets/'); ?>js/demo/datatables-demo.js"></script>
 
 </body>
 

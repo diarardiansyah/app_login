@@ -6,7 +6,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-fw fa-solid fa-code"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">App Login</div>
+        <div class="sidebar-brand-text mx-3">App Zakat</div>
     </a>
 
     <!-- Divider -->

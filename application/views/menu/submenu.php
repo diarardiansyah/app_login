@@ -17,16 +17,16 @@
 
     <?= $this->session->flashdata('flash'); ?>
 
-    <table class="table table-hover">
+    <table class="table table-hover" id="dataTable">
         <thead>
             <tr>
-                <th scope="col">No</th>
-                <th scope="col">Title</th>
-                <th scope="col">Menu</th>
-                <th scope="col">URL</th>
-                <th scope="col">Icon</th>
-                <th scope="col">Active</th>
-                <th scope="col">Action</th>
+                <th>No</th>
+                <th>Title</th>
+                <th>Menu</th>
+                <th>URL</th>
+                <th>Icon</th>
+                <th>Active</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -44,12 +44,14 @@
                     <a href="" class="badge badge-danger">Delete</a>
                 </td>
             </tr>
-        </tbody>
             <?php endforeach ; ?>
+        </tbody>
         </table>
+        
     </div>
 </div>                
 </div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">

@@ -6,6 +6,7 @@ class User extends CI_Controller {
     {
         parent::__construct();
         is_logged_in();
+        $this->load->model('User_model', 'user');
     }
 
     public function index()
@@ -135,5 +136,20 @@ class User extends CI_Controller {
             }
 
         }
+    }
+
+    public function jumlahZakat()
+    {
+        $data['title'] = 'Jumlah Zakat';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        
+        $data['jumlah_zakat'] = $this->user->getSumInfaq();
+        $data['jumlah_mustahik'] = $this->user->getSumMustahik();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('user/jumlah-zakat', $data);
+        $this->load->view('templates/footer');
     }
 }

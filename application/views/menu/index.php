@@ -12,7 +12,7 @@
         <?= form_error('menu', '<div class="alert alert-danger" role="alert">','</div>'); ?>
         <?= $this->session->flashdata('flash'); ?>
 
-        <table class="table table-hover">
+        <table class="table table-hover" id="dataTable">
             <thead>
                 <tr>
                     <th scope="col">No</th>
