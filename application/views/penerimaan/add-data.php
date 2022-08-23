@@ -35,7 +35,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="zakat_beras">Jumlah Zakat Beras</label>
+                            <label for="zakat_beras">Jumlah Zakat Beras Per Kg</label>
                             <input type="text" class="form-control" id="zakat_beras" name="zakat_beras">
                             <small class="form-text text-danger"><?= form_error('zakat_beras'); ?></small>
                         </div>
